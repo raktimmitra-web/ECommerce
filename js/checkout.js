@@ -171,7 +171,6 @@ if (couponForm) {
       const coupon = coupons.find(c => c.code === code);
 
       if (!coupon) {
-        showCouponMessage("Invalid coupon code.", false);
         return;
       }
 
@@ -181,25 +180,15 @@ if (couponForm) {
       } else {
         discount = coupon.value;
       }
-
-      discount = Math.min(discount, total); // Prevent over-discounting
-
-      // Update pricing section
+      discount = Math.min(discount, total); 
       renderOrderPricing(discount, coupon.code);
-      showCouponMessage(`Coupon applied! You saved ₹${discount.toFixed(2)}.`, true);
+     
     } catch (error) {
       console.error("Coupon error:", error);
-      showCouponMessage("Something went wrong applying the coupon.", false);
+      
     }
   });
 }
 
-
-function showCouponMessage(message, success = true) {
-  couponMessage.textContent = message;
-  couponMessage.className = success
-    ? "text-sm mt-2 text-green-600"
-    : "text-sm mt-2 text-red-600";
-}
 
 document.addEventListener("DOMContentLoaded",renderCheckoutPage)
