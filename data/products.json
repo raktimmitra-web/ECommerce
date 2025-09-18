@@ -1,0 +1,419 @@
+[
+  {
+    "id": "eco-prod-001",
+    "name": "Organic Cotton T-Shirt",
+    "description": "A classic, comfortable t-shirt made from 100% GOTS-certified organic cotton. Soft, breathable, and sustainably produced with a minimal water footprint.",
+    "price": 29.99,
+    "currency": "USD",
+    "category": "Apparel",
+    "brand": "GreenThreads",
+    "sku": "GT-TS-ORG-001",
+    "stock": 75,
+    "images": [
+      {
+        "url": "https://www.livbio.in/cdn/shop/files/8_4cfd7e61-68a5-4325-be08-35638c905adc.jpg?v=1743179659",
+        "alt": "Front view of an organic cotton t-shirt"
+      },
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm1FoM0eqMdJrtb4QlU4tl4ExXY1K3Qy7AaA&s",
+        "alt": "Back view of an organic cotton t-shirt"
+      }
+    ],
+    "eco_credentials": {
+      "material": "100% GOTS-certified organic cotton",
+      "packaging": "100% recycled and compostable packaging",
+      "certifications": ["GOTS Certified", "Fair Trade Certified"],
+      "details": "Produced in a factory powered by renewable energy with a minimal water footprint."
+    },
+    "meta_data": {
+      "created_at": "2024-08-15T10:00:00Z",
+      "updated_at": "2025-01-20T12:30:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-002",
+    "name": "Recycled Glass Water Bottle",
+    "description": "Durable and stylish water bottle made from 100% recycled glass. Features a leak-proof, sustainably sourced bamboo lid and a protective silicone sleeve. Free of BPA, BPS, and phthalates.",
+    "price": 19.50,
+    "currency": "USD",
+    "category": "Home Goods",
+    "brand": "PureGlass",
+    "sku": "PG-WB-RECY-002",
+    "stock": 120,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/51GSQ2K9qTL._UF1000,1000_QL80_.jpg",
+        "alt": "Recycled glass water bottle with a bamboo lid"
+      },
+      {
+        "url": "https://m.media-amazon.com/images/I/510lSWleeYL._UF1000,1000_QL80_.jpg",
+        "alt": "Close-up of the bottle's bamboo lid"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Bottle from 100% post-consumer recycled glass; lid from sustainably sourced bamboo",
+      "packaging": "Minimalist, 100% recycled cardboard packaging",
+      "certifications": ["B Corp Certified"],
+      "details": "Manufactured ethically using renewable energy sources."
+    },
+    "meta_data": {
+      "created_at": "2024-09-01T09:15:00Z",
+      "updated_at": "2025-02-10T14:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-003",
+    "name": "Bamboo Reusable Utensil Set",
+    "description": "An essential on-the-go kit for a zero-waste lifestyle. Includes a fork, spoon, knife, and chopsticks in a convenient GOTS-certified organic cotton pouch. All items are biodegradable.",
+    "price": 15.00,
+    "currency": "USD",
+    "category": "Zero Waste",
+    "brand": "Earthware",
+    "sku": "EW-UTEN-BAM-003",
+    "stock": 200,
+    "images": [
+      {
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5EYFZqTmcDae4IkANr_6xSrDwT4Ble3tQaQ&s",
+        "alt": "Set of reusable bamboo utensils in a fabric pouch"
+      },
+      {
+        "url":"https://m.media-amazon.com/images/I/91s-BSBVHkL.jpg",
+        "alt":"Set of reusable bamboo utensils in a fabric pouch"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Sustainably harvested Moso bamboo and organic cotton",
+      "packaging": "Completely plastic-free, recycled, and compostable packaging",
+      "certifications": ["Rainforest Alliance Certified"],
+      "details": "Handcrafted by artisans in a cruelty-free environment."
+    },
+    "meta_data": {
+      "created_at": "2024-09-10T11:45:00Z",
+      "updated_at": "2025-03-05T10:10:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-004",
+    "name": "Soy Wax Scented Candle",
+    "description": "Hand-poured candle made with 100% natural soy wax, a lead-free cotton wick, and essential oils. Burns cleaner and longer than traditional paraffin candles. Packaged in a reusable glass jar.",
+    "price": 22.00,
+    "currency": "USD",
+    "category": "Home Goods",
+    "brand": "KindleGlow",
+    "sku": "KG-SC-SOY-004",
+    "stock": 90,
+    "images": [
+      {
+        "url": "https://5.imimg.com/data5/SELLER/Default/2023/9/343794060/IQ/OX/MV/162796763/heer-scented-soy-wax-candle.jpg",
+        "alt": "Soy wax candle in a reusable glass jar"
+      }
+    ],
+    "eco_credentials": {
+      "material": "100% natural soy wax and essential oils",
+      "packaging": "Reusable glass jar with a recyclable kraft paper label",
+      "certifications": [],
+      "details": "Poured in small batches in a local studio to minimize carbon footprint."
+    },
+    "meta_data": {
+      "created_at": "2024-10-05T15:20:00Z",
+      "updated_at": "2025-01-25T09:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-005",
+    "name": "Upcycled Denim Tote Bag",
+    "description": "Unique tote bag created from discarded denim jeans. Each bag is one-of-a-kind and features a durable design with internal pockets. Supports the zero-waste fashion movement.",
+    "price": 45.00,
+    "currency": "USD",
+    "category": "Apparel",
+    "brand": "ReFashioned",
+    "sku": "RF-TB-UPC-005",
+    "stock": 30,
+    "images": [
+      {
+        "url": "https://i.etsystatic.com/11389823/r/il/6ccb19/2302875353/il_570xN.2302875353_4k0k.jpg",
+        "alt": "Tote bag made from upcycled denim"
+      }
+    ],
+    "eco_credentials": {
+      "material": "100% upcycled post-consumer denim",
+      "packaging": "Shipped in a 100% recycled paper mailer",
+      "certifications": [],
+      "details": "Hand-sewn locally, diverting textile waste from landfills."
+    },
+    "meta_data": {
+      "created_at": "2024-11-12T16:05:00Z",
+      "updated_at": "2025-03-20T11:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-006",
+    "name": "Compostable Phone Case",
+    "description": "Protective and eco-friendly phone case made from a 100% compostable, plant-based material. Breaks down completely without leaving any toxic residue. Compatible with various phone models.",
+    "price": 25.00,
+    "currency": "USD",
+    "category": "Zero Waste",
+    "brand": "BioCover",
+    "sku": "BC-PC-COMP-006",
+    "stock": 150,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/61AGSu9b8jL.jpg",
+        "alt": "Compostable phone case in a neutral color"
+      }
+    ],
+    "eco_credentials": {
+      "material": "100% compostable, plant-based polymer",
+      "packaging": "Plastic-free, made from recycled paper",
+      "certifications": ["TÜV AUSTRIA OK compost HOME Certified"],
+      "details": "Designed to completely break down in a home composting environment."
+    },
+    "meta_data": {
+      "created_at": "2024-12-01T08:00:00Z",
+      "updated_at": "2025-02-15T13:45:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-007",
+    "name": "Reusable Coffee Cup (Bamboo Fiber)",
+    "description": "Lightweight and durable reusable cup made primarily from bamboo fiber. Includes a resealable, BPA-free lid and a heat-protective silicone grip. Perfect for a morning commute.",
+    "price": 18.00,
+    "currency": "USD",
+    "category": "Zero Waste",
+    "brand": "EcoSip",
+    "sku": "ES-CC-BAM-007",
+    "stock": 110,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/71xNlvpTZkL.jpg",
+        "alt": "Reusable coffee cup made from bamboo fiber"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Natural bamboo fiber and food-grade silicone",
+      "packaging": "Completely plastic-free, recyclable packaging",
+      "certifications": ["FSC Certified Bamboo"],
+      "details": "A portion of every sale goes to a reforestation program."
+    },
+    "meta_data": {
+      "created_at": "2025-01-08T10:30:00Z",
+      "updated_at": "2025-03-11T10:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-008",
+    "name": "Solid Shampoo Bar",
+    "description": "Zero-waste alternative to bottled shampoo. Made with natural, vegan ingredients. Lathers beautifully and leaves hair clean and soft. Lasts longer than liquid shampoo.",
+    "price": 12.00,
+    "currency": "USD",
+    "category": "Personal Care",
+    "brand": "LushBar",
+    "sku": "LB-SH-SOLID-008",
+    "stock": 180,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/71jLVMMzHbL._UF1000,1000_QL80_.jpg",
+        "alt": "Round, solid shampoo bar"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Vegan and cruelty-free ingredients",
+      "packaging": "Wrapped in a 100% compostable paper label",
+      "certifications": ["Leaping Bunny Certified"],
+      "details": "Handmade in small batches, free from sulfates and parabens."
+    },
+    "meta_data": {
+      "created_at": "2025-01-28T14:10:00Z",
+      "updated_at": "2025-03-25T15:20:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-009",
+    "name": "Recycled Paper Notebook",
+    "description": "High-quality notebook with unbleached, 100% recycled paper pages. The cover is made from recycled materials and printed with soy-based inks. Perfect for writing or sketching.",
+    "price": 10.00,
+    "currency": "USD",
+    "category": "Outdoor & Travel",
+    "brand": "ReWrite",
+    "sku": "RW-NB-RECY-009",
+    "stock": 250,
+    "images": [
+      {
+        "url": "https://seedballs.in/cdn/shop/files/Eco-Friendly-Notebook-Madefrom-100_RecycledPaper_3_1200x1200.jpg?v=1740575137",
+        "alt": "Recycled paper notebook with a minimalist design"
+      }
+    ],
+    "eco_credentials": {
+      "material": "100% post-consumer recycled paper and cover",
+      "packaging": "Plastic-free packaging",
+      "certifications": [],
+      "details": "Printed with eco-friendly, soy-based inks."
+    },
+    "meta_data": {
+      "created_at": "2025-02-05T09:00:00Z",
+      "updated_at": "2025-03-01T11:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-010",
+    "name": "Biodegradable Dog Waste Bags",
+    "description": "Strong, leak-proof bags made from plant-based, biodegradable material. Unscented and planet-friendly. Comes in a roll that fits standard dispensers.",
+    "price": 8.50,
+    "currency": "USD",
+    "category": "Personal Care",
+    "brand": "PetPure",
+    "sku": "PP-BAG-BIOD-010",
+    "stock": 300,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/71aI4jHM0ZL.jpg",
+        "alt": "Roll of biodegradable dog waste bags"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Plant-based, biodegradable polymer",
+      "packaging": "Recycled cardboard box core",
+      "certifications": ["ASTM D6400 Certified"],
+      "details": "Breaks down in a commercial composting facility."
+    },
+    "meta_data": {
+      "created_at": "2025-02-18T12:00:00Z",
+      "updated_at": "2025-03-22T09:30:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-011",
+    "name": "Bamboo Toothbrush",
+    "description": "Ergonomic toothbrush with a handle made from sustainably harvested bamboo. Features soft, plant-based bristles for effective cleaning. A great plastic-free alternative.",
+    "price": 5.00,
+    "currency": "USD",
+    "category": "Personal Care",
+    "brand": "BambooBliss",
+    "sku": "BB-TB-BAM-011",
+    "stock": 400,
+    "images": [
+      {
+        "url": "https://www.ecofreaky.com/cdn/shop/files/kid_brush_1.png?v=1734959082",
+        "alt": "Bamboo toothbrush with a natural handle"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Sustainably sourced bamboo and plant-based bristles",
+      "packaging": "Plastic-free, recycled paper box",
+      "certifications": ["FSC Certified Bamboo"],
+      "details": "Handle is home compostable. Bristles should be removed before composting."
+    },
+    "meta_data": {
+      "created_at": "2024-09-22T14:30:00Z",
+      "updated_at": "2025-01-10T10:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-012",
+    "name": "Recycled Plastic Picnic Blanket",
+    "description": "Large, durable blanket made from 100% post-consumer recycled plastic bottles. Water-resistant and easy to clean. Rolls up for convenient carrying with a canvas strap.",
+    "price": 55.00,
+    "currency": "USD",
+    "category": "Outdoor & Travel",
+    "brand": "EcoLoom",
+    "sku": "EL-PB-RECY-012",
+    "stock": 60,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/8101mkTSQSL._UF894,1000_QL80_.jpg",
+        "alt": "Recycled plastic picnic blanket with a colorful pattern"
+      }
+    ],
+    "eco_credentials": {
+      "material": "100% recycled plastic bottles (rPET)",
+      "packaging": "Wrapped with a recycled card stock band",
+      "certifications": [],
+      "details": "Helps reduce plastic waste and gives bottles a new life."
+    },
+    "meta_data": {
+      "created_at": "2024-10-15T11:00:00Z",
+      "updated_at": "2025-03-18T14:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-013",
+    "name": "Natural Dish Soap Block",
+    "description": "A concentrated, solid block of dish soap made from natural, plant-based ingredients. Free of palm oil, parabens, and sulfates. Lasts for months and eliminates plastic bottle waste.",
+    "price": 11.50,
+    "currency": "USD",
+    "category": "Home Goods",
+    "brand": "SudsGreen",
+    "sku": "SG-DS-BLOCK-013",
+    "stock": 190,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/81IHGE1eDAL._UF1000,1000_QL80_.jpg",
+        "alt": "Block of natural dish soap on a wooden tray"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Natural, plant-based ingredients; palm oil-free",
+      "packaging": "Unpackaged, with a small recycled paper tag",
+      "certifications": [],
+      "details": "Biodegradable formula safe for sensitive waterways."
+    },
+    "meta_data": {
+      "created_at": "2025-01-02T10:00:00Z",
+      "updated_at": "2025-03-28T16:00:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-014",
+    "name": "Hemp and Recycled Cotton Hoodie",
+    "description": "A comfortable and stylish hoodie made from a blend of organic hemp and recycled cotton. Naturally breathable and durable, with a soft, brushed fleece interior.",
+    "price": 75.00,
+    "currency": "USD",
+    "category": "Apparel",
+    "brand": "TerraTex",
+    "sku": "TT-HD-HEMP-014",
+    "stock": 50,
+    "images": [
+      {
+        "url": "https://wraplondon.imgix.net/live/productimages/webstills/ZU82_F.jpg?smpv=20250724141944&q=50&auto=format&ixlib=imgixjs-3.4.2",
+        "alt": "Comfortable hoodie made from hemp and recycled cotton"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Organic hemp and recycled cotton blend",
+      "packaging": "100% recycled and recyclable polybag",
+      "certifications": [],
+      "details": "Hemp cultivation requires minimal water and pesticides."
+    },
+    "meta_data": {
+      "created_at": "2025-02-20T09:45:00Z",
+      "updated_at": "2025-03-30T10:20:00Z"
+    }
+  },
+  {
+    "id": "eco-prod-015",
+    "name": "Stainless Steel Lunch Box",
+    "description": "A durable, reusable lunch box made from food-grade stainless steel. Features a tiered design with a secure, leak-resistant clasp. A perfect plastic-free solution for packed lunches.",
+    "price": 28.00,
+    "currency": "USD",
+    "category": "Zero Waste",
+    "brand": "EcoEats",
+    "sku": "EE-LB-SS-015",
+    "stock": 100,
+    "images": [
+      {
+        "url": "https://m.media-amazon.com/images/I/61pBk9ZTq9L._UF894,1000_QL80_.jpg",
+        "alt": "Tiered stainless steel lunch box"
+      }
+    ],
+    "eco_credentials": {
+      "material": "Food-grade stainless steel",
+      "packaging": "Packaged in a recycled cardboard box",
+      "certifications": [],
+      "details": "Stainless steel is a highly durable and recyclable material."
+    },
+    "meta_data": {
+      "created_at": "2025-03-10T11:00:00Z",
+      "updated_at": "2025-03-25T12:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "code": "SAVE10",
+    "discountType": "percentage",
+    "value": 10,
+    "minPurchase": 0,
+    "expires": "2025-12-31T23:59:59Z"
+  },
+  {
+    "code": "FREESHIP",
+    "discountType": "flat",
+    "value": 50,
+    "minPurchase": 200,
+    "expires": "2025-10-31T23:59:59Z"
+  },
+  {
+    "code": "WELCOME5",
+    "discountType": "flat",
+    "value": 5,
+    "minPurchase": 0,
+    "expires": "2026-01-01T00:00:00Z"
+  },
+  {
+    "code": "BIGSALE25",
+    "discountType": "percentage",
+    "value": 25,
+    "minPurchase": 500,
+    "expires": "2025-11-30T23:59:59Z"
+  }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>  
+        <main class="flex flex-col md:flex-row py-16 max-w-6xl w-full px-6 mx-auto">
+            <div class='flex-1 max-w-4xl'>
+                <h1 class="text-3xl font-medium mb-6">
+                    Shopping Cart <span class="text-sm text-green-500" id="total-items"></span>
+                </h1>
+
+                <div class="grid grid-cols-[1fr_1fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
+                    <p class="text-left">Product Details</p>
+                    <p class="text-center">Quantity</p>
+                    <p class="text-center">Subtotal</p>
+                    <p class="text-center">Action</p>
+                </div>
+                 <div class="" id="cartContainer">
+
+                 </div>
+                 <!-- <div>
+                    <h1 class="text-xl font-semibold">Coupon Code</h1>
+                    <form class="flex gap-x-2 mt-2" id="coupon-form">
+                        <input type="Enter Your Coupon Code to get big discounts" class="px-2 py-1 outline-none border-2 border-green-400  rounded" name="coupon" id="coupon" value="coupon"/>
+                        <button type="submit" class="px-2  bg-green-400 text-white">Enter Coupon</button>
+                    </form>
+                 </div> -->
+                <a href="index.html">
+                    <button class="group cursor-pointer flex items-center mt-8 gap-2 text-green-500 font-medium">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.09 5.5H1M6.143 10 1 5.5 6.143 1" stroke="green" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    Continue Shopping
+                </button>
+                </a>
+            </div>
+
+            <div class="max-w-[360px] w-full bg-gray-100/40 p-5 max-md:mt-16 border border-gray-300/70">
+                <h2 class="text-xl md:text-xl font-medium">Order Summary</h2>
+                <hr class="border-gray-300 my-5" />
+                <div class="text-gray-500 mt-4 space-y-2 " id="order-pricing">
+                    
+                </div>
+                
+                <hr class="border-gray-300 my-2" />
+                
+                   <div class="mt-6" id="order-shipping-section">
+                          <form id="shipping-form" class="flex flex-col gap-y-2">
+                               <label for="name">Name</label>
+                               <input type="text" placeholder="Enter Your Name" name="name" id="name" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required/>
+                               <label  for="email">Email</label>
+                               <input type="email" placeholder="Enter your email" name="email" id="email" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required/>
+                               <label for="phone-number">Phone Number</label>
+                               <input type="text" id="phone-number" placeholder="Enter Your Phone Number" name="phoneNumber" id="phone-number" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required/>
+                               <label for="address">Address</label>
+                               <textarea id="address" name="address" id="address" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required></textarea>
+                               <label for="payment-option">Payment Option</label>
+                               <select id="payment-option" id="payment-option" name="paymentOption" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required>
+                                 <option value="">Choose Payment Method</option>
+                                 <option value="COD">Cash On Delivery</option>
+                                 <option value="online">Online Payment</option>
+                               </select>
+                               <button class="w-full py-3 mt-6 cursor-pointer bg-green-500 text-white font-medium hover:bg-green-600 transition" type="submit">
+                                   Place Order
+                               </button>
+                          </form>
+                   </div>
+
+
+            </div>
+        </main>
+        <div id="toast-container" class="fixed top-5 right-5 z-50 space-y-2 "></div>
+        <script src="./js/checkout.js" type="module"></script>
+        <script src="./js/cart.js" type="module"></script>
+</body>
+</html>
