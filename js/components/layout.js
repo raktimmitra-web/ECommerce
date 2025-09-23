@@ -1,3 +1,4 @@
+import { setupSearch } from "../product.js";
 import { footer } from "./footer.js";
 import { header } from "./header.js";
 
@@ -16,4 +17,8 @@ export const loadLayout = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   loadLayout();
+   setTimeout(() => {
+    setupSearch(); 
+  }, 0);
 });
+

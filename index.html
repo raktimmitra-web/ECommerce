@@ -1,58 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
     <title>EcoKart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-<!-- navbar -->
-<nav id="header-container"></nav>
-<!-- banner -->
-<main>
-  <div class="bg-[url(./assets/images/image.png)] h-[70vh] bg-cover flex justify-center items-start flex-col px-8 md:items-center md:px-0">
-    <h1 class="text-6xl font-bold text-white/85 ">Sustainable Living Starts Here</h1>
-    <p class="text-2xl text-white/85 pt-2">Discover a curated collection of eco-friendly products for a healthier planet.</p>
-    <a href="#product"><button class="bg-green-600 px-6 py-2 text-white rounded mt-12 ">Shop Now</button></a>
-  </div>    
-</main>
-<!-- categories -->
-<section class="w-full flex flex-col items-center mt-16 gap-y-4 px-4">
-  <h1 class="text-3xl md:text-2xl font-extrabold text-center text-gray-800">
-    What Are You Shopping For Today?
-  </h1>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      id="header-container"
+      class="bg-white shadow-md sticky top-0 z-50"
+    ></nav>
+    <!-- banner -->
+    <main>
+      <!-- hero section -->
+      <section
+        id="hero"
+        class="bg-gradient-to-t from-slate-50 to-green-100 py-16 px-4"
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+        >
+          <!-- Text Section -->
+          <div class="flex-1 text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold text-green-700 mb-4">
+              Welcome to <span class="text-green-500">EcoKart</span>
+            </h1>
+            <p class="text-lg text-gray-700 mb-6">
+              Discover a curated collection of eco-friendly products for a
+              healthier planet
+            </p>
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4"
+            >
+              <a
+                href="#best-sellers"
+                class="bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition"
+              >
+                Shop Now
+              </a>
+            </div>
+          </div>
 
-  <div class="flex flex-wrap justify-center gap-4 max-w-6xl w-full">
-    <button class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm" category="All">All</button>
-    <button class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm" category="Apparel">Apparel</button>
-    <button class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm" category="Zero Waste">Zero Waste</button>
-    <button class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm" category="Home Goods">Home Goods</button>
-    <button class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm" category="Outdoor & Travel">Outdoor & Travel</button>
-    <button class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm" category="Personal Care">Personal Care</button>
-  </div>
-  <div class="sm:flex space-x-4 items-center ">
-          <input type="text" name="searchItem" id="searchItem" placeholder="Search Product" class="w-80 px-3 py-2 outline-green-600 border-2 border-green-400 rounded-lg"/>
-  </div>
-</section>
-<!-- product -->
-<main class="p-6" id="product">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="productList">
+          <!-- Image Section -->
+          <div class="flex-1">
+            <img
+              src="https://cdn.prod.website-files.com/63ff7c6ecc83f9ec7ffe916b/67103d8084525c8a632a5cb3_663e61f0badefabc0ce64961_sustainableproducts-ezgif.com-png-to-webp-converter.webp"
+              alt="Eco-friendly products"
+              class="w-full h-auto rounded-lg shadow-xl border-4 border-green-800"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- about section -->
+      <section
+        id="about"
+        class="w-full max-w-6xl mx-auto px-4 py-16 flex gap-8 flex-col md:flex-row"
+      >
+        <div class="flex-1">
+          <img
+            class="rounded-xl"
+            src="https://media.istockphoto.com/id/1411289606/photo/paper-eco-friendly-disposable-tableware-with-recycling-signs-on-the-background-of-green-plants.jpg?s=612x612&w=0&k=20&c=ng731oZuBvrja5tNFkrcW-hWtWJqieyxw3A2HSei0QI="
+          />
+        </div>
+        <div class="flex-1 space-y-4">
+          <h2 class="text-3xl font-bold text-gray-800">Who We Are</h2>
+          <p class="text-gray-700 text-lg">
+            At <strong>EcoKart</strong>, we believe sustainability should be
+            simple. That’s why we created a platform where you can shop
+            guilt-free, knowing every product is natural, plastic-free, and
+            ethically made.
+          </p>
+          <p class="text-gray-700 text-lg">
+            From our eco-friendly packaging to our carbon-neutral shipping,
+            every detail is crafted with the planet in mind. Our mission is to
+            make eco-living accessible and affordable for everyone.
+          </p>
+          <a
+            href=""
+            class="inline-block bg-green-700 text-white px-6 py-3 rounded hover:bg-green-800 transition"
+          >
+            Learn More About Us
+          </a>
+        </div>
+      </section>
+      <!-- filter section -->
+      <section
+        id="filters"
+        class="w-full flex flex-col items-center mt-16 gap-y-8 px-4 max-w-6xl mx-auto"
+      >
+        <h1 class="text-3xl font-bold text-center text-gray-800">
+          What Are You Shopping For Today?
+        </h1>
 
-    </div>
-</main>
-<!-- footer -->
-<footer id="footer-container"></footer>
+        <div class="flex flex-wrap justify-center gap-4 max-w-6xl w-full">
+          <button
+            class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm"
+            category="Apparel"
+          >
+            Apparel
+          </button>
+          <button
+            class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm"
+            category="Zero Waste"
+          >
+            Zero Waste
+          </button>
+          <button
+            class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm"
+            category="Home Goods"
+          >
+            Home Goods
+          </button>
+          <button
+            class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm"
+            category="Outdoor & Travel"
+          >
+            Outdoor & Travel
+          </button>
+          <button
+            class="filterBtn text-base md:text-lg font-medium border px-5 py-2.5 rounded-full text-gray-700 border-gray-300 hover:bg-gray-100 hover:text-black transition duration-200 shadow-sm"
+            category="Personal Care"
+          >
+            Personal Care
+          </button>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          id="filteredProductList"
+        ></div>
+      </section>
+      <!-- Product section -->
+      <section id="best-sellers" class="w-full max-w-6xl mx-auto px-4 py-16">
+        <h1
+          class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12"
+        >
+          Best Sellers
+        </h1>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          id="productList"
+        ></div>
+      </section>
+      <!-- features section -->
+      <section id="features" class="w-full max-w-6xl mx-auto px-4 py-16">
+        <h1 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          Why Choose Us
+        </h1>
 
-<!-- toast -->
-<div id="toast-container" class="fixed top-5 right-5 z-50 space-y-2 "></div>
-<script src="./js/product.js" type="module"></script>
-<script src="./js/cart.js" type="module"></script>
-<script src="./js/checkout.js" type="module"></script>
-<script src="./js/components/layout.js" type="module"></script>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="text-center space-y-4 bg-slate-100 px-4 py-6 rounded-xl">
+            <i
+              class="fas fa-leaf"
+              style="
+                font-size: 48px;
+                color: transparent;
+                -webkit-text-stroke: 2px #4caf50;
+              "
+            ></i>
+            <h2 class="text-xl font-semibold">100% Sustainable Products</h2>
+            <p class="text-gray-600">
+              Everything we sell is sourced with the planet in mind—natural,
+              renewable, and ethically made.
+            </p>
+          </div>
 
-</body>
+          <!-- Feature 2 -->
+          <div class="text-center space-y-4 bg-slate-100 px-4 py-6 rounded-xl">
+            <i
+              class="fa-solid fa-box"
+              style="
+                font-size: 48px;
+                color: transparent;
+                -webkit-text-stroke: 2px #4caf50;
+              "
+            ></i>
+            <h2 class="text-xl font-semibold">Plastic-Free Packaging</h2>
+            <p class="text-gray-600">
+              Say goodbye to plastic. Every EcoKart box is recyclable or
+              compostable.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="text-center space-y-4 bg-slate-100 px-4 py-6 rounded-xl">
+            <i
+              class="fas fa-truck-fast"
+              style="
+                font-size: 48px;
+                color: transparent;
+                -webkit-text-stroke: 2px #4caf50;
+              "
+            ></i>
+            <h2 class="text-xl font-semibold">Carbon-Neutral Shipping</h2>
+            <p class="text-gray-600">
+              We offset all delivery emissions so your order arrives guilt-free.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- reviews section -->
+      <section id="reviews" class="w-full max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">
+          What Our Customers Say
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Review Card -->
+          <div class="bg-slate-50 rounded-md shadow-lg p-6 space-y-4">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://media.istockphoto.com/id/2151669184/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=UEa7oHoOL30ynvmJzSCIPrwwopJdfqzBs0q69ezQoM8="
+                alt="Customer photo"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <p class="font-semibold">Raktim Mitra</p>
+                <p class="text-sm text-gray-500">Mumbai, India</p>
+              </div>
+            </div>
+            <div class="flex text-yellow-400 text-lg">
+              <!-- 5 stars -->
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-700">
+              “EcoKart has changed the way I shop—guilt-free, fast delivery, and
+              great products!”
+            </p>
+          </div>
+          <div class="bg-slate-50 rounded-md shadow-lg p-6 space-y-4">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://media.istockphoto.com/id/2151669184/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=UEa7oHoOL30ynvmJzSCIPrwwopJdfqzBs0q69ezQoM8="
+                alt="Customer photo"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <p class="font-semibold">Sneha Reddi</p>
+                <p class="text-sm text-gray-500">Bangalore, India</p>
+              </div>
+            </div>
+            <div class="flex text-yellow-400 text-lg">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p class="text-gray-700">
+              “Love the zero-waste packaging! I always feel good about ordering
+              from here.”
+            </p>
+          </div>
+          <div class="bg-slate-50 rounded-md shadow-lg p-6 space-y-4">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://media.istockphoto.com/id/2151669184/vector/vector-flat-illustration-in-grayscale-avatar-user-profile-person-icon-gender-neutral.jpg?s=612x612&w=0&k=20&c=UEa7oHoOL30ynvmJzSCIPrwwopJdfqzBs0q69ezQoM8="
+                alt="Customer photo"
+                class="w-12 h-12 rounded-full"
+              />
+              <div>
+                <p class="font-semibold">Pawan Singh</p>
+                <p class="text-sm text-gray-500">Delhi, India</p>
+              </div>
+            </div>
+            <div class="flex text-yellow-400 text-lg">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="text-gray-700">
+              “Great quality products and a real commitment to the environment.
+              Highly recommend!”
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- faq section -->
+      <section
+        id="faqs"
+        class="max-w-6xl mx-auto flex flex-col md:flex-row items-start justify-center gap-8 px-4 md:px-0 py-10"
+      >
+        <div class="w-full rounded-xl h-auto md:flex-1">
+          <img
+            class="rounded-xl"
+            src="https://thesustainablebrandsjournal.com/wp-content/uploads/2023/10/aaa-mbbLRRx6G-transformed-e1697954086537.jpg"
+            alt="FAQ image"
+          />
+        </div>
+        <div class="w-full md:flex-1 space-y-4">
+          <h1 class="text-3xl font-bold text-gray-800">Looking for answer?</h1>
+          <p class="text-sm text-slate-500 mt-2 pb-4">
+            Know the answers to some of the most frequently asked questions
+            about our products.
+          </p>
+
+          <!-- FAQ Items -->
+          <div id="faqContainer"></div>
+        </div>
+      </section>
+      <!-- Newsletter section -->
+      <section
+        id="newsLetter"
+        class="w-full max-w-6xl mx-auto px-4 sm:px-6 py-12"
+      >
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-center gap-6"
+        >
+          <!-- Text Content -->
+          <div class="space-y-4 text-center md:text-left md:w-1/2">
+            <h1 class="text-3xl font-bold">Subscribe to our newsletter</h1>
+            <p class="text-gray-600">
+              Subscribe to our latest newsletter to get news about special
+              discounts & upcoming sales.
+            </p>
+          </div>
+
+          <!-- Form -->
+          <form
+            class="w-full md:w-1/2 flex flex-col sm:flex-row items-center gap-4"
+          >
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full sm:flex-1 px-4 py-3 border-2 border-green-500 rounded"
+              required
+            />
+            <button
+              type="submit"
+              class="w-full sm:w-auto px-6 py-3 bg-green-700 text-white font-semibold rounded"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer-container"></footer>
+
+    <!-- toast -->
+    <div id="toast-container" class="fixed top-5 right-5 z-50 space-y-2"></div>
+    <script src="./js/product.js" type="module"></script>
+    <script src="./js/cart.js" type="module"></script>
+    <script src="./js/checkout.js" type="module"></script>
+    <script src="./js/components/layout.js" type="module"></script>
+    <script src="./js/components/faq.js" type="module"></script>
+    <script src="./js/wishlist.js" type="module"></script>
+  </body>
 </html>

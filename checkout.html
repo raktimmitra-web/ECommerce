@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
 <body>  
-        <main class="flex flex-col md:flex-row py-16 max-w-6xl w-full px-6 mx-auto">
-            <div class='flex-1 max-w-4xl'>
-                <h1 class="text-3xl font-medium mb-6">
+    <main class="flex flex-col md:flex-row py-16 max-w-6xl w-full px-6 mx-auto">
+        <div class='flex-1 max-w-4xl'>
+            <h1 class="text-3xl font-medium mb-6">
                     Shopping Cart <span class="text-sm text-green-500" id="total-items"></span>
-                </h1>
+            </h1>
 
-                <div class="grid grid-cols-[1fr_1fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
+            <div class="grid grid-cols-[1fr_1fr_1fr_1fr] text-gray-500 text-base font-medium pb-3">
                     <p class="text-left">Product Details</p>
                     <p class="text-center">Quantity</p>
                     <p class="text-center">Subtotal</p>
@@ -39,7 +38,6 @@
                 </button>
                 </a>
             </div>
-
             <div class="max-w-[360px] w-full bg-gray-100/40 p-5 max-md:mt-16 border border-gray-300/70">
                 <h2 class="text-xl md:text-xl font-medium">Order Summary</h2>
                 <hr class="border-gray-300 my-5" />
@@ -72,8 +70,8 @@
                    </div>
 
 
-            </div>
-        </main>
+        </div>
+    </main>
         <div id="toast-container" class="fixed top-5 right-5 z-50 space-y-2 "></div>
         <script src="./js/checkout.js" type="module"></script>
         <script src="./js/cart.js" type="module"></script>
