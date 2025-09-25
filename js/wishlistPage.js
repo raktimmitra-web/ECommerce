@@ -14,11 +14,15 @@
 
 // document.addEventListener("DOMContentLoaded",loadWishlistPage)
 
-
-
-import { addToCart, decreseQuantity, increaseQuantity, getCart } from "./cart.js";
+import {
+  addToCart,
+  decreseQuantity,
+  increaseQuantity,
+  getCart,
+} from "./cart.js";
+import { showToast } from "./components/toast.js";
 import { renderQuantityControls } from "./product.js";
-import { getWishlist } from "./wishlist.js";
+import { getWishlist, setWishlist } from "./wishlist.js";
 
 const loadWishlistPage = () => {
   const wishlist = getWishlist();
@@ -32,14 +36,23 @@ const loadWishlistPage = () => {
     const cart = getCart();
     const existing = cart.find((item) => item.id === product.id);
 
-    card.className = "rounded-lg shadow-lg bg-white flex flex-col hover:shadow-xl transition-shadow duration-300 product-card";
+    card.className =
+      "rounded-lg shadow-lg bg-white flex flex-col hover:shadow-xl transition-shadow duration-300 product-card";
     card.innerHTML = `
+      <div class="relative">
+      <button class="absolute top-4 right-4 deleteFromWishlistBtn" ><i class="fa-solid fa-circle-xmark text-2xl text-red-500"></i></button>
       <div class="bg-white rounded-lg overflow-hidden">
-        <img src="${product.images[0].url}" alt="${product.name}" class="w-full h-60 object-cover">
+        <img src="${product.images[0].url}" alt="${
+      product.name
+    }" class="w-full h-60 object-cover">
         <div class="p-4">
-          <h3 class="text-2xl font-semibold text-gray-800 mb-2">${product.name}</h3>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">${
+            product.name
+          }</h3>
           <p class="text-gray-600 mb-3 line-clamp-3">${product.description}</p>
-          <p class="text-lg font-bold text-green-700 mb-4">Cost: $${product.price}</p>
+          <p class="text-lg font-bold text-green-700 mb-4">Cost: $${
+            product.price
+          }</p>
           <div class="flex gap-4 items-center">
             <a 
               href="product.html?id=${product.id}" 
@@ -59,6 +72,8 @@ const loadWishlistPage = () => {
           </div>
         </div>
       </div>
+      </div>
+
     `;
 
     const addToCartBtn = card.querySelector(".addToCartBtn");
@@ -84,7 +99,20 @@ const loadWishlistPage = () => {
         });
       }
     }
-
+    const deleteFromWishlistBtn = card.querySelector(".deleteFromWishlistBtn")
+    if (deleteFromWishlistBtn) {
+   
+      deleteFromWishlistBtn.addEventListener("click", () => {
+         let wishlist=getWishlist()
+         const existing=wishlist.find((item)=>item.id===product.id)
+         if(existing){
+          wishlist=wishlist.filter((item)=>item.id!==product.id)
+         }
+         setWishlist(wishlist)
+         loadWishlistPage()
+         showToast("Deleted From Wishlist","danger")
+      });
+    }
     wishlistContainer.appendChild(card);
   });
 };
