@@ -99,22 +99,28 @@ const loadWishlistPage = () => {
         });
       }
     }
-    const deleteFromWishlistBtn = card.querySelector(".deleteFromWishlistBtn")
+    const deleteFromWishlistBtn = card.querySelector(".deleteFromWishlistBtn");
     if (deleteFromWishlistBtn) {
-   
       deleteFromWishlistBtn.addEventListener("click", () => {
-         let wishlist=getWishlist()
-         const existing=wishlist.find((item)=>item.id===product.id)
-         if(existing){
-          wishlist=wishlist.filter((item)=>item.id!==product.id)
-         }
-         setWishlist(wishlist)
-         loadWishlistPage()
-         showToast("Deleted From Wishlist","danger")
+        let wishlist = getWishlist();
+        const existing = wishlist.find((item) => item.id === product.id);
+        if (existing) {
+          wishlist = wishlist.filter((item) => item.id !== product.id);
+        }
+        setWishlist(wishlist);
+        loadWishlistPage();
+        showToast("Deleted From Wishlist", "danger");
       });
     }
     wishlistContainer.appendChild(card);
   });
+  
 };
 
+const loadWishlistMarker = () => {
+  const wishlist = getWishlist();
+  const wishlistMarker = document.getElementById("wishlistMarker");
+  wishlistMarker.textContent =`hello `;
+}
 document.addEventListener("DOMContentLoaded", loadWishlistPage);
+document.addEventListener("cartUpdated", loadWishlistMarker);

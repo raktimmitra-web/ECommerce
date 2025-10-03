@@ -26,7 +26,7 @@
                     <h1 class="text-xl font-semibold">Coupon Code</h1>
                     <form class="flex gap-x-2 mt-2" id="coupon-form">
                         <input type="Enter Your Coupon Code to get big discounts" class="px-2 py-1 outline-none border-2 border-green-400  rounded" name="coupon" id="coupon" value="coupon"/>
-                        <button type="submit" class="px-2  bg-green-400 text-white">Enter Coupon</button>
+                        <button type="submit" class="px-2  bg-green-400 text-white cursor-pointer">Enter Coupon</button>
                     </form>
                  </div>
                 <a href="index.html">
@@ -54,11 +54,11 @@
                                <label  for="email">Email</label>
                                <input type="email" placeholder="Enter your email" name="email" id="email" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required/>
                                <label for="phone-number">Phone Number</label>
-                               <input type="text" id="phone-number" placeholder="Enter Your Phone Number" name="phoneNumber" id="phone-number" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required/>
+                               <input type="text" id="phone-number" placeholder="Enter Your Phone Number" name="phoneNumber" min="10" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required/>
                                <label for="address">Address</label>
                                <textarea id="address" name="address" id="address" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required></textarea>
                                <label for="payment-option">Payment Option</label>
-                               <select id="payment-option" id="payment-option" name="paymentOption" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required>
+                               <select id="payment-option"  name="paymentOption" class="py-2 px-3 border-2 border-green-400 focus:border-2 focus:border-green-700 outline-none" required>
                                  <option value="">Choose Payment Method</option>
                                  <option value="COD">Cash On Delivery</option>
                                  <option value="online">Online Payment</option>

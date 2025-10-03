@@ -69,7 +69,7 @@ const renderProducts = (products) => {
    } absolute w-fit top-4 rounded-2xl text-white font-semibold px-2 left-3 z-10">${
       i == 1 ? "New" : "Sale"
     }</div>
-    <div class="absolute top-4 right-3 text-2xl text-red-400 hover:scale-110 wishlistBtn" data-product-id="${
+    <div class="absolute top-4 right-3 text-2xl text-red-400 hover:scale-110 wishlistBtn animate-pulse" data-product-id="${
       product.id
     }"><i class="${
       wishlistedProductExisting ? "fa-solid" : "fa-regular"

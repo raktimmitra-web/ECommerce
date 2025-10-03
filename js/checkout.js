@@ -103,8 +103,9 @@ if (shippingForm) {
 
     console.log(cartData);
     console.log(shippingData);
-
-    if(validate(shippingData,cartData)){
+    const validation=validate(shippingData, cartData)
+    console.log(validation)
+    if(validation.status){
         const order = {
       id: Date.now(),
       name: shippingData.name,
@@ -125,29 +126,43 @@ if (shippingForm) {
     window.location.href = "confirmation.html";
     }
     else{
-        showToast("validation error","error")
+        showToast(validation.message,"error")
     }
   });
 }
 
 const validate = (shippingData, cartData) => {
   if (cartData.length === 0) {
-    return false;
+    return {
+      status: false,
+      message: "Cart is empty",
+    };
   }
 
   if (!shippingData.name || shippingData.name.trim().length < 2) {
-    return false;
+    return {
+      status: false,
+      message: "Name should be at least 2 characters long",
+    };
   }
 
   if (!shippingData.address || shippingData.address.trim().length < 5) {
-    return false;
+    return {
+      status: false,
+      message: "Address should be at least 5 characters long",
+    };
   }
 
   const phoneRegex = /^[0-9]{10,}$/;
   if (!shippingData.phoneNumber || !phoneRegex.test(shippingData.phoneNumber)) {
-    return false;
+    return {
+      status: false,
+      message: "Invalid phone number",
+    };
   }
-  return true; 
+  return {
+    status: true,
+  }; 
 };
 
 const couponForm=document.getElementById("coupon-form")

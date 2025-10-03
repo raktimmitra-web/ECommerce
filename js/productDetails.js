@@ -35,7 +35,7 @@ productDetailsCard.innerHTML = `
         <p class="text-gray-700">${product.description}</p>
 
         <div class="flex flex-col sm:flex-row items-center mt-10 gap-4">
-          <div id="controls-${product.id}" class="flex-1/3">
+          <div id="controls-${product.id}" class="flex-1/3 w-full">
             ${
               existing
                 ? renderQuantityControls(existing)
@@ -44,7 +44,7 @@ productDetailsCard.innerHTML = `
                   </button>`
             }
           </div>
-          <button class="buyNowBtn flex-2/3 py-3.5 font-medium bg-green-400 text-white hover:bg-green-600 transition rounded">
+          <button class="buyNowBtn w-full flex-2/3 py-3.5 font-medium bg-green-400 text-white hover:bg-green-600 transition rounded">
             Buy Now
           </button>
         </div>
@@ -55,6 +55,14 @@ productDetailsCard.innerHTML = `
    document.querySelectorAll(".addToCartBtn").forEach(button => {
   button.addEventListener("click", () => {
     addToCart(product);
+  });
+  updateCartCount()
+});
+
+ document.querySelectorAll(".buyNowBtn").forEach(button => {
+  button.addEventListener("click", () => {
+    addToCart(product);
+    window.location.href="checkout.html"
   });
   updateCartCount()
 });
@@ -75,7 +83,7 @@ if (existing) {
         });
       }
     }
-
+updateCartCount()
 }
 
 document.addEventListener("DOMContentLoaded",loadProducts)

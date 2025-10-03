@@ -79,8 +79,8 @@ export function updateCartCount() {
   }
 }
 
-const cartCount = document.getElementById("cart-count");
-if (cartCount) cartCount.addEventListener("DOMContentLoaded", updateCartCount);
+// const cartCount = document.getElementById("cart-count");
+// if (cartCount) cartCount.addEventListener("DOMContentLoaded", updateCartCount);
 
 export const header = () => {
   return `
@@ -89,9 +89,9 @@ export const header = () => {
       <div class="flex items-center justify-between h-16">
         
         <!-- Left: Logo -->
-        <div class="flex-shrink-0">
+        <a href="index.html" class="flex-shrink-0">
           <img class="h-16 w-auto" src="./assets/images/logo.png" alt="EcoKart Logo" />
-        </div>
+        </a>
 
       
         <div class="hidden md:flex space-x-6">
@@ -105,11 +105,14 @@ export const header = () => {
        
         <div class="flex items-center space-x-8 ">
           <input type="text" placeholder="Search..." name="searchItem" id="searchItem" class="px-3 py-1 border rounded-md text-sm hidden sm:block" />
-         <a href="wishlist.html" class="relative">
+          <button>
+           <a href="wishlist.html" class="relative">
           <i class="fa-solid fa-heart"></i>
           </a>
+           <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-1 rounded-full" id="wishlist-mark"></span>
+          </button>
           
-          <button class="relative">
+          <button class="relative" >
           <a href="checkout.html"><i class="fas fa-cart-shopping"></i></a>
           <span class="absolute -top-2 -right-2 bg-green-600 text-white text-xs px-1 rounded-full" id="cart-count">0</span>
           </button>
@@ -146,4 +149,3 @@ export const header = () => {
 
     `;
 };
-
